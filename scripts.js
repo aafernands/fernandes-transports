@@ -1,4 +1,3 @@
-
 const msg1 = `Delivered! 🚗✨
 Have a nice day!`;
 
@@ -15,8 +14,8 @@ Thank you for your patience.`;
 
 function copyMsg(text) {
   navigator.clipboard.writeText(text).then(() => {
-    document.getElementById("status").innerText =
-      "Copied — ready to paste";
-      alert("Copied — ready to paste");
+    document.getElementById("status").innerText = "Copied — ready to paste";
   });
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();

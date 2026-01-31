@@ -4,25 +4,36 @@
 <meta charset="UTF-8">
 <title>Quick Delivery Messages</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<div class="container">
-  <h1>Quick Copy Messages</h1>
-  <div class="brand">Fernandes Transports LLC</div>
+<nav class="nav">
+  <div class="nav-brand">Fernandes Transports LLC</div>
+</nav>
 
-  <button onclick="copyMsg(msg1)">Delivered — Simple</button>
-  <button onclick="copyMsg(msg2)">Delivered + Favorite</button>
-  <button onclick="copyMsg(msg3)">On The Way</button>
-  <button onclick="copyMsg(msg4)">Delay Update</button>
+<main class="main">
 
-  <div id="status" class="status"></div>
-</div>
+  <div class="container">
+    <h1>Quick Copy Messages</h1>
+    <div class="brand">Driver Message Helper</div>
 
-<script src="scripts.js">   </script>
+    <button onclick="copyMsg(msg1)">Delivered — Simple</button>
+    <button onclick="copyMsg(msg2)">Delivered + Favorite</button>
+    <button onclick="copyMsg(msg3)">On The Way</button>
+    <button onclick="copyMsg(msg4)">Delay Update</button>
+
+    <div id="status" class="status"></div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Fernandes Transports LLC
+</footer>
+
+<script src="scripts.js"></script>
 
 </body>
 </html>
