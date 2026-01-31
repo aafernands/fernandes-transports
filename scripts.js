@@ -17,5 +17,6 @@ function copyMsg(text) {
   navigator.clipboard.writeText(text).then(() => {
     document.getElementById("status").innerText =
       "Copied — ready to paste";
+      alert("Copied — ready to paste");
   });
 }
